@@ -43,7 +43,7 @@ void twolist_print(int listrow,int listcol,int **list){
 	for(int i=0;i<listrow;i++){
 		for(int j=0;j<listcol;j++){
 			cout<<"第"<<i+1<<"行第"<<j+1<<"列为："
-				<< *((int*)list+ i * 4 + j)
+				<< *((int*)list + j + i *listcol)
 				<<endl;
 		}
 	cout<<endl;
